@@ -1,0 +1,6 @@
+model-viewer {
+    width: 800px;
+    height: 600px;
+    --poster-color: #fff;
+    --progress-bar-color: #ff00ff;
+  }
