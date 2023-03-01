@@ -26,17 +26,23 @@
 			alt="Model de Barril Radioactiu"
 			autoplay
 			camera-controls
+			environment-image="./assets/hdr's/HDR_029_Sky_Cloudy_Ref.hdr"
+			animation-name="giro-en-y"
+   			animation-loop
+    		animation-duration="6000"
 		></model-viewer>
 
-		<!--
-        <model-viewer 
-            alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" 
-            src="./assets/models/BarrilRadioactiu.glb" 
-            environment-image="./assets/hdr's/HDR_029_Sky_Cloudy_Ref.hdr"
-            poster="https://i.ytimg.com/vi/lFYQRutiH_I/maxresdefault.jpg" 
-            shadow-intensity="1" 
-            camera-controls touch-action="pan-y">
-        </model-viewer>
-		-->
+		<script>
+			const barril = document.querySelector('#BarrilRadioactiu');
+		
+			barril.addEventListener('load', () => {
+			  barril.setCameraOrbit(-180, 60, 2);
+			  barril.play();
+			});
+		
+			barril.addEventListener('click', () => {
+			  barril.pause();
+			});
+		  </script>
 	</body>
 </html>
