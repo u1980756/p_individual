@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<!--<link rel="stylesheet" href="./styles/main.css">
+		<script src="./js/loader.js"></script>
+		<script src="./js/game_info.js"></script>
+		<script src="./js/menu_controller.js"></script>
+		<title> My first game - Menu </title>-->
+
+        
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+        <title>Dissenys 3D</title>
+	</head>
+	<body>
+		<!--<div class="container">
+			<p class="menu-object" id="title">Memory menu</p>
+			<button class="menu-object" onclick="start_game()"> 
+				Start Game 
+			</button>
+			<button class="menu-object" onclick="options()"> 
+				Options 
+			</button>
+			<button class="menu-object" onclick="exit()"> 
+				Exit 
+			</button>
+		</div>-->
+        <model-viewer 
+            alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" 
+            src="./assets/models/BarrilRadioactiu.glb" 
+            environment-image="./assets/hdr's/HDR_029_Sky_Cloudy_Ref.hdr"
+            poster="https://i.ytimg.com/vi/lFYQRutiH_I/maxresdefault.jpg" 
+            shadow-intensity="1" 
+            camera-controls touch-action="pan-y">
+        </model-viewer>
+	</body>
+</html>
