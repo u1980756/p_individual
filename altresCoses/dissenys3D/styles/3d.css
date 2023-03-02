@@ -11,4 +11,5 @@ model-viewer {
     grid-template-columns: 100px 100px 100px 100px;
     grid-gap: 5px;
     background: blue;
+    border: black 5px solid;
   }
