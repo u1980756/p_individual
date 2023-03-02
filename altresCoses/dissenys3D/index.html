@@ -8,23 +8,21 @@
         <title>Dissenys 3D</title>
 	</head>
 	<body>
-		<!--<div class="container">
-			<p class="menu-object" id="title">Memory menu</p>
-			<button class="menu-object" onclick="start_game()"> 
-				Start Game 
-			</button>
-			<button class="menu-object" onclick="options()"> 
-				Options 
-			</button>
-			<button class="menu-object" onclick="exit()"> 
-				Exit 
-			</button>
-		</div>-->
 		<a href="./assets/models/barril.glb">Cosetes</a>
 		<model-viewer 
 			id="BarrilRadioactiu"
 			src="./assets/models/BarrilRadioactiu.glb"
 			alt="Model de Barril Radioactiu"
+			autoplay
+			camera-controls
+			environment-image="./assets/hdr's/HDR_029_Sky_Cloudy_Ref.hdr"
+			minFPS="5"
+  			maxFPS="5"
+		></model-viewer>
+		<model-viewer 
+			id="Barril"
+			src="./assets/models/barril.glb"
+			alt="Model de Barril"
 			autoplay
 			camera-controls
 			environment-image="./assets/hdr's/HDR_029_Sky_Cloudy_Ref.hdr"
