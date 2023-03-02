@@ -4,3 +4,10 @@ model-viewer {
     --poster-color: #fff;
     --progress-bar-color: #ff00ff;
   }
+
+  .grid1{
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-gap: 5px;
+  }
