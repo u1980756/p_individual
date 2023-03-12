@@ -1,19 +1,77 @@
 <!DOCTYPE html> 
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--Font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+   		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+
 		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="../../style.css?v=7">
 		<script src="../js/game_controller.js"></script>
 		<script src="../js/loader.js"></script>
 		<title> My first game - Game </title>
 	</head>
 	<body>
-		<p class="menu-object" id="title">Memory game</p>
-		<div>
-			<img src="../resources/cb.png" onclick="items[0].do_click()">
-			<img src="../resources/tb.png" onclick="items[1].do_click()">
-			<img src="../resources/tb.png" onclick="items[2].do_click()">
-			<img src="../resources/cb.png" onclick="items[3].do_click()">
+		<header class="header">
+			<div class="grid">
+				<h1 class="title">Memory game</h1>
+				<h2 class="subtitle">by Ferran Perez Garcia</h2>
+			</div>
+		</header>
+
+		<!--********************************************-->
+		<div class="corpus">
+			<div class="game">
+				<div class="memory">
+					<img src="../resources/cb.png" onclick="items[0].do_click()">
+					<img src="../resources/tb.png" onclick="items[1].do_click()">
+					<img src="../resources/tb.png" onclick="items[2].do_click()">
+					<img src="../resources/cb.png" onclick="items[3].do_click()">
+				</div>
+				
+			</div>
+			<a class="memory" href="../">GoToMenu</a>
 		</div>
-		<a class="menu-object" href="../">GoToMenu</a>
+		<!--*************************************-->
+		<footer class="footer">
+			<div class="grid">
+				<div class="text-footer">
+					<h2 class="subtitle2">Contacta amb mi</h2>
+				</div>
+				<div class="item-footer">
+					<a href="#">
+						<i class="fa-solid fa-envelope"></i>
+					</a>
+				</div>
+				<div class="item-footer">
+					<a href="#">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+				</div>
+				<div class="item-footer">
+					<a href="#">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+				<div class="end">
+					<p class="email">ferranperez2001@gmail.com</p>
+					<p class="udg">Universitat de Girona</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://kit.fontawesome.com/2509be2d3e.js" crossorigin="anonymous"></script>
+
+
+
+
+
+		
+		
 	</body>
 </html>

@@ -1,12 +1,63 @@
 <!DOCTYPE html> 
 <html>
 	<head>
-		<link rel="stylesheet" href="./pi_2/styles/main.css">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--Font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+   		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="./style.css?v=6">
 		<script src="./js/menu_controller.js"></script>
-		<title>Pr�ctica individual 1</title>
+		<title>Practica individual 1</title>
 	</head>
 	<body>
-		<p class="menu-object" id="title">Ferran Perez Garcia</p>
-		<button class = "menu-object" onclick="open_memory()">Memory</button>
+		<header class="header">
+			<div class="grid">
+				<h1 class="title">Ferran Pérez Garcia</h1>
+			</div>
+		</header>
+
+		<!--********************************************-->
+		<div class="corpus">
+			<div class="grid">
+				<div class="buttons">
+					<button class = "button" onclick="open_memory()">Memory</button>
+					<button class = "button" onclick="open_memory()">Memory</button>
+					<button class = "button" onclick="open_memory()">Memory</button>
+				</div>	
+			</div>
+		</div>
+		<!--++++++++++++++++++++++++++++++++++++++++++++-->
+		<footer class="footer">
+			<div class="grid">
+				<div class="text-footer">
+					<h2 class="subtitle2">Contacta amb mi</h2>
+				</div>
+				<div class="item-footer">
+					<a href="#">
+						<i class="fa-solid fa-envelope"></i>
+					</a>
+				</div>
+				<div class="item-footer">
+					<a href="#">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+				</div>
+				<div class="item-footer">
+					<a href="#">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+				<div class="end">
+					<p class="email">ferranperez2001@gmail.com</p>
+					<p class="udg">Universitat de Girona</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://kit.fontawesome.com/2509be2d3e.js" crossorigin="anonymous"></script>
 	</body>
 </html>

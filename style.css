@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: rgb(20, 20, 20);
+}
+
+body{
+    background: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    width: 90%;
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
+}
+
+/*HEADER*/
+.header{
+    height: 200px;
+    background: rgb(20, 20, 20);
+}
+
+.title{
+    margin: auto;
+    grid-column: 1/-1;
+    color: white;
+    font-size: 60px;
+}
+
+.subtitle{
+    margin: auto;
+    grid-column: 1/-1;
+    color: white;
+    font-size: 15px;
+}
+
+/*CORPUS*/
+.corpus{
+    margin: 25px;
+}
+
+.buttons{
+    text-align: center;
+    grid-column: 5/9;
+}
+
+.button{
+    text-align: center;
+    margin:10px 0px;
+    width: 250px;
+    height: 100px;
+    background: rgb(20, 20, 20);
+    color: white;
+    border-radius: 8px;
+    font-size: 25px;
+    border: 4px solid white;
+}
+
+.button:hover{
+    text-align: center;
+    margin:10px 0px;
+    width: 250px;
+    height: 100px;
+    background: white;
+    color: rgb(20, 20, 20);
+    border-radius: 8px;
+    font-size: 40px;
+    border: 4px solid rgb(20, 20, 20);
+}
+
+/*FOOTER*/
+.footer{
+    background: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
+    height: 100%;
+    padding-top: 40px;
+}
+
+.text-footer{
+    grid-column: 1/-1;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.item-footer{
+    grid-column: span 4;
+    max-width: 100%;
+}
+
+.item-footer a{
+    color: white;
+    font-size: 50px;
+}
+
+.end{
+    margin: 20px;
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.email{
+    text-align: left;
+}
+
+.udg{
+    text-align: right;
+}
+
+/*GAMES*/
+  .memory{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px){
+    .header{
+        height: auto;
+    }
+
+    .grid{
+        grid-gap: 30px;
+    }
+
+    .title{
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    .buttons{
+        text-align: center;
+        grid-column: 1/-1;
+    }
+
+    .end{
+        margin: 20px;
+        grid-column: 1/-1;
+        display: inline;
+        justify-content: space-between;
+    }
+
+    .email{
+        text-align: center;
+    }
+    
+    .udg{
+        text-align: center;
+    }
+}
