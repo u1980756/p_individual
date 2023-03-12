@@ -51,6 +51,12 @@ body{
     margin: 25px;
 }
 
+.texto{
+    text-align: justify;
+    grid-column: 1/-1;
+    
+}
+
 .buttons{
     text-align: center;
     grid-column: 5/9;

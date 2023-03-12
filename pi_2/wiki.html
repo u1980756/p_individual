@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--Font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+   		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="../style.css?v=6">
+		<script src="./js/loader.js"></script>
+		<script src="./js/game_info.js"></script>
+		<script src="./js/menu_controller.js"></script>
+		<title> My first game - Menu </title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="grid">
+				<h1 class="title">Wiki - Memory</h1>
+				<h2 class="subtitle">by Ferran Perez Garcia</h2>
+			</div>
+		</header>
+		<div class="corpus">
+			<div class="grid">
+                <div class="texto">
+                    <h1>
+                        1.Modifiqueu el index.html principal perquè sigui un menú general de les pràctiques
+                        individuals.
+                    </h1>
+                    <h2> 1.1.Creeu un botó que us redireccioni a l’index.html de la pàgina feta a teoria (la que
+                        acabeu de penjar a la carpeta pi_2)</h2>
+                    <p>He creat un button amb text Memory que redirecciona al pagina inicial del Memory mitjançant una funcio de javascript que he creat anomenada openmemory(). Aquesta funció s'executa al fer click al button.</p>
+                    <h2>1.2.Creeu un títol i doneu-li un estil a la pàgina</h2>
+                    <p>He creat un títol en el header i li he donat un estil. El títol posat és el meu nom, ja que el index.html principal fa referencia al meu portfolio de les pràctiques de l'assignatura</p>
+
+                    <br>
+                    <h1>2.En l’arxiu index.html dins de pi_2</h1>
+                    <h2>2.1.Modifiqueu el CSS per fer que el menú quedi centrat utilitzant GRID de CSS i utilitzi
+                        rem en lloc de px</h2>
+                    <p>En aquest cas en comptes d'utilitzar simplement rem he volgut fer un div amb classe grid que en el css té la propietat " grid-template-columns: repeat(12,1fr);", de tal manera que cada "button" esta dintre del div "buttons". En el css el div "buttons" té la propietat "grid-column: 5/9;" aixo el que fa és que els buttons ocupin l'espai entre la columnma  5 i 9. </p>
+                    <h2>2.2.Apliqueu-li un estil que lligui amb el de la pàgina principal que heu creat a l’apartat
+                        anterior</h2>
+                    <p>Per realitzar aixo simplement he usar el mateixe estil afegint en el header el link adequat"</p>
+                    <h2>2.3.Feu que el botó sortir vagi al menú principal que heu creat vosaltres</h2>
+                    <p>En e botó li he afegit la propietat onclick="loadpage('../index.html')" </p>
+
+                    <br>
+                    <h1>3.Apliqueu-li estil a la pantalla de joc de memòria (game.htm fet a teoria)</h1>
+                    <h2>3.1.Feu que les cartes surtin centrades i que tot tingui un estil coherent amb la resta de
+                        pàgines.</h2>
+                        <p> En el cas del joc ho he fet d'una manera diferent, en comptes de dirli que ocupi d'una columna fins un altre he realitzat un div amb classe memory que ha dintre té: "display: grid;
+                            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                            padding: 10px;" i automàticament s'encarrega d'ocupar tota la pantalla i colocar les cartes una sota l'altre quan la resol·lució sigui més petita.  </p>
+                        <br>
+                </div>
+				
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="grid">
+				<div class="text-footer">
+					<h2 class="subtitle2">Contacta amb mi</h2>
+				</div>
+				<div class="item-footer">
+					<a href="#">
+						<i class="fa-solid fa-envelope"></i>
+					</a>
+				</div>
+				<div class="item-footer">
+					<a href="#">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+				</div>
+				<div class="item-footer">
+					<a href="#">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+				</div>
+				<div class="end">
+					<p class="email">ferranperez2001@gmail.com</p>
+					<p class="udg">Universitat de Girona</p>
+				</div>
+			</div>
+		</footer>
+		<script src="https://kit.fontawesome.com/2509be2d3e.js" crossorigin="anonymous"></script>
+	</body>
+</html>
+
+
