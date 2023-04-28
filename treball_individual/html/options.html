@@ -7,7 +7,14 @@
 	</head>
 	<body>
 		<div id="options_id">
-			<p class="menu-object" id="title">Options menú</p>
+			<h1 class="menu-object" id="title">Options menú</h1>
+			<h2>¿Quin Mode de Joc Vols?</h1>
+			<div class="menu-object">
+				<input type="radio" id="mode1" value="mode1" v-model="mode" checked>
+				<label for="mode1">Mode 1</label>
+				<input type="radio" id="mode2" value="mode2" v-model="mode">
+				<label for="mode2">Mode 2</label>
+			</div>
 			<h2>Mode 1</h2>
 			<div class="menu-object">
 				<label for="labelnumber">Number of cards:</label>
