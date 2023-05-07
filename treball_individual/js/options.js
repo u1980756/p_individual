@@ -4,10 +4,12 @@ var options = function(){
 		cards:2, 
 		dificulty:"hard", 
 		startlevel: 1, 
-		mode:"mode1"
+		mode:"mode1",
+		name: "user",
+		score:100
 	};
 	var load = function(){
-		var json = localStorage.getItem("config") || '{"cards":2,"dificulty":"hard","startlevel":1,"mode":"mode1"}';
+		var json = localStorage.getItem("config") || '{"cards":2,"dificulty":"hard","startlevel":1,"mode":"mode1", "name":"user"}';
 		options_data = JSON.parse(json);
 	};
 	var save = function(){
@@ -21,13 +23,15 @@ var options = function(){
 			num: 2,
 			dificulty: "hard",
 			firstlevel: 1,
-			mode: "mode1"
+			mode: "mode1",
+			name: "user"
 		},
 		created: function(){
 			this.num = options_data.cards;
 			this.dificulty = options_data.dificulty;
 			this.firstlevel = options_data.startlevel;
 			this.mode = options_data.mode;
+			this.name = options_data.name;
 		},
 		watch: {
 			num: function(value){ /*S'encarregara que el nombre de cartes estigui dintre del interval [2,4]*/
@@ -48,12 +52,14 @@ var options = function(){
 				this.dificulty = options_data.dificulty;
 				this.firstlevel = options_data.startlevel;
 				this.mode = options_data.mode;
+				this.name = options_data.name;
 			},
 			save: function(){
 				options_data.cards = this.num;
 				options_data.dificulty = this.dificulty;
 				options_data.startlevel = this.firstlevel;
 				options_data.mode = this.mode;
+				options_data.name = this.name;
 				save();
 				loadpage("../");
 			}

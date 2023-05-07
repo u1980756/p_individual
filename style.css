@@ -174,3 +174,37 @@ body{
         text-align: center;
     }
 }
+
+
+/*PHASER*/
+#game_area {
+    grid-column: 1/-1;
+  }
+
+
+  .corpus #_h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+
+.containerREC{
+    display: table;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+ #recordsId {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .containerREC a{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 25px;
+}

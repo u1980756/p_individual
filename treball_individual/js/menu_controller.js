@@ -5,3 +5,7 @@ function start_game(){
 	
 	loadpage("./html/game.html");
 }
+
+function phaser_game(){
+	loadpage("./html/phasergame.html");
+}
